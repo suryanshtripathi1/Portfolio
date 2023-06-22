@@ -1,0 +1,51 @@
+<section class="contact">
+    <h2 class="mt-16 underline text-center">Contact Me</h2>
+    <div class=" mt-16 main-panel flex justify-around items-center">
+        <div class="left-panel">
+            <div class="flex">
+                <div class="cont-logo">
+                    <i class='bx bxs-map' ></i>
+                </div>
+                <div class="cont-content ml-6 mt-4">
+                    <h4>Address</h4>
+                    <p>Raipur Khadar</p>
+                    <p>Noida</p>
+                    <p>201303</p>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <div class="cont-logo">
+                    <i class='bx bxs-phone' ></i>
+                </div>
+                <div class="cont-content ml-6 mt-4">
+                    <h4>Phone</h4>
+                    <p>+91-8787247275</p>
+                    <p>+91-9532533440</p>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <div class="cont-logo">
+                    <i class='bx bxl-gmail'></i>
+                </div>
+                <div class="cont-content ml-6 mt-4">
+                    <h4>Email</h4>
+                    <p>suryanshtripathi2021@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel border-2 border-white bg-white text-black p-8">
+            <form action="/contactme" method="post">
+                <h3>Send Message</h3>
+                <% if(messages.error) { %>
+                    <span class="text-red-500 text-m mt-4"><%= messages.error%></span>
+                <% } %>
+                <div class="flex flex-col">
+                <input type="text" name="name" class="border-b-2 border-black border-solid w-96 mt-4 hover:border-none" placeholder="Full Name">
+                <input type="text" name="email" class="border-b-2 border-black border-solid w-96 mt-8 hover:border-none" placeholder="Email">
+                <input type="text" name="message" class="border-b-2 border-black border-solid w-96 mt-12 hover:border-none" placeholder="Type you message here...">
+                </div>
+                <button type="submit" class="bttn mt-16 text-black">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
