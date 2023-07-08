@@ -83,9 +83,44 @@
     color: #0ef;
   }
 
+  @media (max-width: 1023px) {
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #111827;
+        z-index: 9999;
+    }
+
+    .navbar-collapse.show ul {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .navbar-collapse.show ul li {
+        margin: 10px 0;
+    }
+
+    .logo{
+      margin-right: auto;
+      margin-left: 40px;
+    }
+
+    .hid-block{
+      margin-right: 40px;
+    }
+}
+
   //home
   .home{
-    padding: 70px 10% 0;
+    padding: 72px 45px;
+    margin-bottom: 11px;
   }
 
   .home-content{
@@ -180,9 +215,22 @@
       0 0 100px cyan, 0 0 200px cyan;
     }
 
+    @media (max-width: 607px) {
+      .home{
+        display: block;
+        margin-top: -70px;
+      }
+
+      .bg_img{
+        margin: auto;
+        margin-top: 70px;
+      }
+    }
+
   //about
 .about-section{
   font-size: 17px;
+  padding: 35px;
 }
 
   .about-section h3{
@@ -199,7 +247,20 @@
     animation-delay: 1s;
   }
 
+  @media (max-width: 607px) {
+    .about-section{
+      margin-top: -50px;
+    }
+    .about-sectionn p{
+      margin-top: 30px;
+    }
+  }
+
   //projects
+  .work-section{
+    padding: 35px;
+  }
+
   .work-img1{
     width: 50rem;
     height: 20rem;
@@ -248,7 +309,29 @@
     animation-delay: 1s;
   }
 
+  @media (max-width: 740px) {
+    .work-sectionn{
+      display: block;
+    }
+    .work-section h2{
+      margin-top: 2px;
+    }
+    .work-img{
+      margin-bottom: 25px;
+    }
+    .work-img1{
+      margin-top: -30px;
+    }
+    .work-cont{
+      margin-left: 0px;
+    }
+  }
+
   //contactme
+  .contact{
+    margin-bottom: 66px;
+  }
+
   .cont-logo{
     display: inline-flex;
     justify-content: center;
@@ -303,6 +386,37 @@
     background: rgb(10, 184, 196);
   }
 
+  @media (max-width: 847px) {
+    .contact h2{
+      margin-top: 34px;
+    }
+    .main-panel{
+      display: block;
+    }
+    .left-panel{
+      margin-bottom: 40px;
+      margin-top: -55px
+    }
+    .left-panel div{
+      justify-content: center;
+    }
+    .right-panel{
+      width: 375px;
+      margin-bottom: 40px;
+      margin: auto;
+    }
+    .border-b-2{
+      width: auto;
+    }
+  }
+
+  //footer
+  footer{
+    background-color: black;
+    width: -webkit-fill-available;
+    text-align: center;
+  }
+
   @keyframes slideRight{
     0%{
       transform: translateX(-100px);
@@ -346,4 +460,5 @@
       opacity: 1;
     }
   }
+
 
