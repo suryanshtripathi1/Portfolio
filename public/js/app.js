@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typed.js */ "./node_modules/typed.js/dist/typed.module.js");
 
 var typed = new typed_js__WEBPACK_IMPORTED_MODULE_0__["default"](".text", {
-  strings: ["Frontend Developer", "Backend Developer", "UI/UX Designer"],
+  strings: ["Frontend Developer", "Backend Developer", "Cloud Engineer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
