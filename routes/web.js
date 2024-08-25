@@ -9,6 +9,8 @@ function initRoutes(app) {
 
     app.get('/about', homeController().about)
 
+    app.get('/experience', homeController().experience)
+
     app.get('/projects', homeController().projects)
 
 }

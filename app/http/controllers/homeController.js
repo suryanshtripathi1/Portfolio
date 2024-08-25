@@ -10,6 +10,10 @@ function homeController() {
 
         projects(req,res){
             res.render('projects')
+        },
+
+        experience(req,res){
+            res.render('experience')
         }
     }
 }
